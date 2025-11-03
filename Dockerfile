@@ -6,15 +6,15 @@ WORKDIR /src
 
 # Copia os arquivos de projeto e restaura dependências
 COPY *.sln .
-COPY API/*.csproj API/
-COPY Application/*.csproj Application/
-COPY Domain/*.csproj Domain/
-COPY Infrastructure/*.csproj Infrastructure/
+COPY SchoolManager.API/*.csproj SchoolManager.API/
+COPY SchoolManager.Application/*.csproj SchoolManager.Application/
+COPY SchoolManager.Domain/*.csproj SchoolManager.Domain/
+COPY SchoolManager.Infrastructure/*.csproj SchoolManager.Infrastructure/
 RUN dotnet restore
 
 # Copia o restante do código e publica a aplicação
 COPY . .
-WORKDIR /src/API
+WORKDIR /src/SchoolManager.API
 RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
 # ===========================
@@ -26,11 +26,11 @@ WORKDIR /app
 # Copia arquivos publicados do stage anterior
 COPY --from=build /app/publish .
 
-# Define a porta padrão exposta (Render detecta automaticamente)
+# Porta padrão do Render
 EXPOSE 8080
 
-# Variável obrigatória para ASP.NET em ambiente Linux
+# Define a variável obrigatória de URL
 ENV ASPNETCORE_URLS=http://+:8080
 
-# Define o ponto de entrada
-ENTRYPOINT ["dotnet", "API.dll"]
+# Ponto de entrada da aplicação
+ENTRYPOINT ["dotnet", "SchoolManager.API.dll"]
