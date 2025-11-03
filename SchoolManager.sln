@@ -1,7 +1,0 @@
-<Solution>
-  <Project Path="SchoolManager.API/SchoolManager.API.csproj" />
-  <Project Path="SchoolManager.Application/SchoolManager.Application.csproj" />
-  <Project Path="SchoolManager.Domain/SchoolManager.Domain.csproj" />
-  <Project Path="SchoolManager.Infrastructure/SchoolManager.Infrastructure.csproj" />
-  <Project Path="SchoolManager.Tests/SchoolManager.Tests.csproj" />
-</Solution>

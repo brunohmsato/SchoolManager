@@ -12,7 +12,7 @@ COPY SchoolManager.Domain/*.csproj SchoolManager.Domain/
 COPY SchoolManager.Infrastructure/*.csproj SchoolManager.Infrastructure/
 
 # Restaura as dependências com base na solução principal
-RUN dotnet restore SchoolManager.sln
+RUN dotnet restore SchoolManager.slnx
 
 # Copia o restante do código
 COPY . .
