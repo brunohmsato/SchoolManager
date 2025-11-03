@@ -62,7 +62,7 @@ dotnet run --project SchoolManager.API
 ```
 
 Acesse no navegador:
-👉 http://localhost:5000/swagger
+👉 http://localhost:7244/swagger
 
 ---
 
@@ -100,7 +100,7 @@ O workflow `.github/workflows/dotnet-ci.yml` executa automaticamente:
 ✅ Publicação de artefatos de build  
 
 ### Badge de status
-![.NET CI](https://github.com/seuusuario/SchoolManager/actions/workflows/dotnet-ci.yml/badge.svg)
+![.NET CI](https://github.com/brunohmsato/SchoolManager/actions/workflows/dotnet-ci.yml/badge.svg)
 
 ---
 
