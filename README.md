@@ -99,9 +99,6 @@ O workflow `.github/workflows/dotnet-ci.yml` executa automaticamente:
 ✅ Relatório de cobertura (coverlet + ReportGenerator)  
 ✅ Publicação de artefatos de build  
 
-### Badge de status
-![.NET CI](https://github.com/brunohmsato/SchoolManager/actions/workflows/dotnet-ci.yml/badge.svg)
-
 ---
 
 ## 🧠 Relatórios disponíveis
