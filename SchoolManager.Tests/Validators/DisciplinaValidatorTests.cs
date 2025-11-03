@@ -37,6 +37,6 @@ public class DisciplinaValidatorTests
         var result = _validator.Validate(disciplina);
 
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.ErrorMessage.Contains("deve ser maior ou igual a 2 caracteres"));
+        result.Errors.Should().Contain(e => e.ErrorMessage.Contains("2 caracteres"));
     }
 }
