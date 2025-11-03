@@ -133,21 +133,6 @@ Exemplo de resposta:
 
 ---
 
-## 🌐 Deploy (opcional)
-
-O projeto pode ser facilmente publicado em:
-
-| Plataforma | Link |
-|-------------|------|
-| [Render.com](https://render.com) | API gratuita e simples |
-| [Railway.app](https://railway.app) | Ideal para pequenos projetos |
-| [Azure App Service](https://azure.microsoft.com) | Integração nativa com GitHub Actions |
-
-Exemplo:
-> 🌍 **Demo:** [https://schoolmanager.onrender.com/swagger](https://schoolmanager.onrender.com/swagger)
-
----
-
 ## 📚 Futuras melhorias
 
 - 🔐 Autenticação JWT simples (usuário admin)
